@@ -1,0 +1,75 @@
+server address:
+https://dajiba-test.herokuapp.com
+
+Notation:
+":var": a variable with name var
+
+"query -> path
+code: reason
+": query can be made by using path on the right,
+   code is the response code,
+   reason is the meaning of the response code,
+   on success (code=200), API returns a JSON object
+
+"path": [GET|POST|PUT] /.../...
+
+Usage example:
+Example query: "SELECT * FROM CourseInformation WHERE ID = 1"
+API call: https://dajiba-test.herokuapp.com/CourseInformation/id/1
+API response code: 200
+API response:
+{"id":1,"coursecode":"CSC301","grade":"66","comments":"Yes"}
+
+REST API:
+"SELECT * FROM :table WHERE ID = :id" -> GET /:table/id/:id
+200: table and id exist, check JSON for content, NOTE that column names are converted into lower case for some reasons
+400: id provided is not an integer
+500: table provided does not exist, or internal server error
+
+"INSERT INTO CourseInformation(CourseCode, Grade, Comments) VALUES (:code, :grade, :comment)"
+    -> PUT /CourseInformation/:code/:grade/:comment
+200: insertion was successful
+404: insertion was not successful
+500: internal server error
+
+"INSERT INTO CourseInformation(name, email, rating) VALUES (:name, :email, :rating)"
+    -> PUT /professors/:name/:email/:rating
+200: insertion was successful
+404: insertion was not successful
+500: internal server error
+
+"SELECT * FROM users WHERE name = :user AND pass = :pass"
+    -> POST /login/:user/:pass
+200: credentials are correct
+401: credentials are not correct
+500: internal server error
+
+"INSERT INTO users (name, pass)
+         SELECT :user, :pass
+         WHERE NOT EXISTS (
+             SELECT name FROM users WHERE name = :user
+             )"
+    -> PUT /login/:user/:pass
+200: insertion was successful
+404: :user exists
+500: internal server error
+
+"INSERT INTO questions(title, description) VALUES (:title, :desc)" -> PUT /question/:title/:desc
+200: insertion was successful
+404: :id does not exist
+500: internal server error
+
+"SELECT * FROM questions WHERE title LIKE %:question%" -> GET /question/:question
+200: results are returned
+404: no match for :question
+500: internal server error
+
+"SELECT * FROM answers WHERE id = :id" -> GET /answer/:id
+200: results are returned
+404: no answer for this question or id does not exist (make sure you have the correct id for this query to narrow down the reasons)
+500: internal server error
+
+"INSERT INTO answers(ID, answer) VALUES (:id, :answer)" -> PUT /answer/:id/:answer
+200: insertion was successful
+404: :id does not correspond to an existing question
+500: internal server error
