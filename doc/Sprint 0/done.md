@@ -1,0 +1,3 @@
+- Our standard definition of done is when all features mentioned on pivotal tracker seamlessly work together 
+  - The tasks associated to all of features on the pivotal tracker need to be finished 
+- Our additional definition of done is when when a user can use the functionality mentioned in the user stories without any bugs
