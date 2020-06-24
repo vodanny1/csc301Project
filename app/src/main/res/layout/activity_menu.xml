@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    tools:context="comineashantrehan.linkedin.httpswww.ucourse.Menu">
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:layout_below="@+id/button9"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="start"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/my_button_bg"
+        android:text="Past Documents"
+        />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="start"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/my_button_bg"
+        android:text="Online Tutoring"
+        android:textAlignment="gravity" />
+
+
+    <Button
+        android:text="Course Information"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:id="@+id/button7"
+        android:layout_width="373dp"
+        android:textAlignment="gravity"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/my_button_bg"
+
+        android:layout_gravity="start"
+        />
+
+    <Button
+        android:text="Professor Details"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/button6"
+        android:background="@drawable/my_button_bg"
+        android:textAlignment="gravity"
+        android:layout_width="372dp"
+        android:layout_gravity="start"
+
+        android:layout_below="@+id/button7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="About UCourse"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button_bg"
+
+        android:id="@+id/button5"
+
+        android:layout_width="373dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/button10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="gravity" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#FDFEFE"
+        android:elevation="0dp"
+        android:onClick="logout"
+        app:srcCompat="?android:attr/homeAsUpIndicator" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="390dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="325dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/student" />
+
+</RelativeLayout>

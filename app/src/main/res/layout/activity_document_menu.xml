@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_document__menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    tools:context="comineashantrehan.linkedin.httpswww.ucourse.Document_Search">
+    //tools:context="comineashantrehan.linkedin.httpswww.ucourse_sprint_3.Document_Menu">
+
+    <TextView
+        android:text="Documents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/DocMenuHeading"
+        android:textSize="24sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:text="Click the below buttons for uploading a new document or viewing an already existing document"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:id="@+id/DocMenuBody"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_below="@+id/DocMenuHeading"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/ViewDocOption"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_alignStart="@+id/UploadDocOption"
+        android:layout_alignLeft="@+id/UploadDocOption"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="182dp"
+        android:background="@drawable/my_button_bg"
+        android:onClick="b2"
+        android:text="View Document" />
+
+    <Button
+        android:id="@+id/UploadDocOption"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/ViewDocOption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/my_button_bg"
+        android:onClick="b1"
+        android:text="Upload Document" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="?android:attr/homeAsUpIndicator"
+        android:id="@+id/BackToMenu"
+        android:layout_above="@+id/DocMenuBody"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:onClick="b3" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="390dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="325dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/student"
+        />
+
+
+
+
+</RelativeLayout>

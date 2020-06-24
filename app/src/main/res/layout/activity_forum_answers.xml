@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forum__answers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="comineashantrehan.linkedin.httpswww.ucourse.Forum_Answers">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/MyQHeading"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/ListOfQ" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="?android:attr/homeAsUpIndicator"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/SearchQToForumMenu"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/MyQHeading"
+        android:layout_width="183dp"
+        android:layout_height="41dp"
+        android:layout_alignBottom="@+id/SearchQToForumMenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-17dp"
+        android:text="Your Questions"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+</RelativeLayout>

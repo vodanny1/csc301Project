@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_document__upload"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    tools:context="comineashantrehan.linkedin.httpswww.ucourse.Document_Search">
+    //tools:context="comineashantrehan.linkedin.httpswww.ucourse_sprint_3.Document_Upload">
+
+    <TextView
+        android:text="Upload Documents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/UploadDocumentsHeading"
+        android:textSize="24sp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:text="Select"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/UploadDoc"
+        android:layout_alignRight="@+id/UploadDoc"
+        android:layout_alignEnd="@+id/UploadDoc"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/my_button_bg"
+        android:id="@+id/SelectDoc"
+        android:onClick="b1" />
+
+    <Button
+        android:id="@+id/UploadDoc"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="95dp"
+        android:background="@drawable/my_button_bg"
+        android:onClick="b2"
+
+        android:text="Upload" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_above="@+id/SelectDoc"
+        android:layout_alignLeft="@+id/UploadDocumentsHeading"
+        android:layout_alignStart="@+id/UploadDocumentsHeading"
+        android:id="@+id/InputFileName"
+        android:hint="Input File Name"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <ImageView
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:id="@+id/DocView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/InputFileName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:id="@+id/BackDocumentsMenu"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/UploadDocumentsHeading"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:onClick="ib"
+        app:srcCompat="?android:attr/homeAsUpIndicator" />
+</RelativeLayout>

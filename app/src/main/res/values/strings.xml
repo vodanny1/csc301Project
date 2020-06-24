@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ucourse</string>
+    <string name="input_email">email</string>
+    <string name="input_password">password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Sign-up</string>
+    <string name="title_activity_course_details">CourseDetails</string>
+</resources>

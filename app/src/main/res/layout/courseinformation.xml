@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context="comineashantrehan.linkedin.httpswww.ucourse.Menu"
+    android:background="@color/white"
+    >
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-6dp"
+        android:layout_marginRight="-6dp"
+        android:onClick="back"
+        android:background="@color/white"
+        app:srcCompat="?android:attr/homeAsUpIndicator" />
+
+
+
+
+
+
+    <EditText
+        android:layout_marginTop="100dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etFirstName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Course Code" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLastName"
+        android:layout_below="@+id/etFirstName"
+        android:layout_centerHorizontal="true"
+        android:hint="Course Grade"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etFavFood"
+        android:layout_below="@+id/etLastName"
+        android:layout_centerHorizontal="true"
+        android:hint="Would you recommend this course?"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etFavFood"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/my_button_bg"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etFavFood"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="147dp"
+        android:background="@drawable/my_button_bg"
+        android:text="View" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etFavFood"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="52dp"
+        android:background="@drawable/my_button_bg"
+        android:text="Search" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="390dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="325dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/student"
+        />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
